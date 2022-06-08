@@ -7,7 +7,7 @@ const Home = () => {
   const getData = async () => {
     try {
       const res = await fetch(
-        "https://sheet.best/api/sheets/10ee8d87-b3ac-4e28-a895-0f031ec4a34a"
+        " " // enter sheet.best link here
         
       );
       const data = await res.json();
@@ -24,7 +24,7 @@ const Home = () => {
   const handleDelete = async (rowIndex) => {
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/10ee8d87-b3ac-4e28-a895-0f031ec4a34a/${rowIndex}`,
+        `<link>/${rowIndex}`, // enter sheet.best link here
         {
           method: "DELETE",
         }
