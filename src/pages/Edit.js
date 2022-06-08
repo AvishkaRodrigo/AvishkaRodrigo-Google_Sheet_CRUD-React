@@ -15,7 +15,7 @@ const Edit = () => {
   const getData = async () => {
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/10ee8d87-b3ac-4e28-a895-0f031ec4a34a/${rowIndex}`
+        `<link>/${rowIndex}`  // enter sheet.best link here
       );
       const data = await res.json();
       setData(data[0]);
@@ -35,7 +35,7 @@ const Edit = () => {
     e.preventDefault();
     try {
       const res = await fetch(
-        `https://sheet.best/api/sheets/10ee8d87-b3ac-4e28-a895-0f031ec4a34a/${rowIndex}`,
+        `<link>/${rowIndex}`  // enter sheet.best link here
         {
           method: "PUT",
           headers: {
