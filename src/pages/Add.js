@@ -17,7 +17,7 @@ const Add = () => {
     e.preventDefault();
     try {
       const res = await fetch(
-        "https://sheet.best/api/sheets/10ee8d87-b3ac-4e28-a895-0f031ec4a34a",
+        " ", // Enter sheet.best link here
         
         {
           method: "POST",
